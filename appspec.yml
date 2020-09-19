@@ -1,7 +1,8 @@
 version: 0.0
 os: linux
+# files : sourceで、EC2とgithubで連携するディレクトリを指定している。全て対応させるときは、「/」
 files:
-  - source: /index.html
+  - source: /
     destination: /var/www/html/
 hooks:
   BeforeInstall:
